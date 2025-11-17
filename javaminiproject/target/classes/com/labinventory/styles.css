@@ -1,0 +1,228 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header - Tropical Jade Sunrise Gradient */
+.header {
+    -fx-background-color: linear-gradient(to right, #097C87, #23CED9);
+    -fx-padding: 15;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+/* Statistics Cards */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-padding: 20;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.alert-card {
+    -fx-background-color: #fff9c4;
+}
+
+.stat-number {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-fill: #097C87;
+}
+
+.stat-label {
+    -fx-font-size: 14px;
+    -fx-fill: #666666;
+}
+
+/* Section Titles */
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #333333;
+}
+
+/* Buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #23CED9, #097C87);
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: linear-gradient(to right, #097C87, #23CED9);
+    -fx-effect: dropshadow(gaussian, rgba(9, 124, 135, 0.4), 8, 0, 0, 2);
+}
+
+.secondary-button {
+    -fx-background-color: #A1CCA6;
+    -fx-text-fill: #097C87;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #23CED9;
+    -fx-text-fill: white;
+}
+
+.delete-button {
+    -fx-background-color: #FCA47C;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.delete-button:hover {
+    -fx-background-color: #F9D779;
+    -fx-text-fill: #097C87;
+}
+
+.back-button {
+    -fx-background-color: #097C87;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.back-button:hover {
+    -fx-background-color: #23CED9;
+}
+
+/* Tables - Keep it simple for visibility */
+.table-view {
+    -fx-background-color: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #23CED9, #097C87);
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-cell-size: 30;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(35, 206, 217, 0.2);
+}
+
+.table-cell {
+    -fx-text-fill: black;
+    -fx-padding: 5;
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+.text-field:focused {
+    -fx-border-color: #23CED9;
+    -fx-border-width: 2;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Dialogs */
+.dialog-pane {
+    -fx-background-color: white;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(to right, #097C87, #23CED9);
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #d1d8e0;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+}
+
+.combo-box:hover {
+    -fx-border-color: #23CED9;
+}
+
+/* DatePicker */
+.date-picker {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+}
+
+/* ListView Styles */
+.alert-list-container {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(35, 206, 217, 0.3), 10, 0.5, 0, 3);
+}
+
+.alert-list {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.alert-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.alert-list .list-cell:hover {
+    -fx-background-color: rgba(35, 206, 217, 0.08);
+}
+
+/* Equipment Management List */
+.equipment-list {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.equipment-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 8 5 8 5;
+}
+
+.equipment-list .list-cell:selected {
+    -fx-background-color: rgba(35, 206, 217, 0.15);
+}

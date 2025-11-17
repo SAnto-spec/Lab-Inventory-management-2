@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.labinventory.controller.EquipmentManagementController" 
+            stylesheets="@styles.css">    <!-- Top Bar -->
+    <top>
+        <VBox styleClass="header">
+            <HBox alignment="CENTER_LEFT" spacing="15" style="-fx-padding: 20;">
+                <Button text="← Back to Home" onAction="#backToHome" styleClass="back-button"/>
+                <Text text="Equipment Management" styleClass="title"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Main Content -->
+    <center>
+        <VBox spacing="20" style="-fx-padding: 30;">
+            
+            <!-- Search and Action Bar -->
+            <HBox spacing="15" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Search by name or category..." 
+                          prefWidth="300" onKeyReleased="#handleSearch"/>
+                <Button text="Search" onAction="#handleSearch" styleClass="secondary-button"/>
+                <ComboBox fx:id="sortComboBox" promptText="Sort by..." prefWidth="150"/>
+                <Button text="Sort" onAction="#handleSort" styleClass="secondary-button"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="+ Add Equipment" onAction="#showAddDialog" 
+                        styleClass="primary-button" prefWidth="150"/>
+            </HBox>
+
+            <!-- Equipment List -->
+            <ListView fx:id="equipmentList" VBox.vgrow="ALWAYS" styleClass="equipment-list"/>
+
+            <!-- Action Buttons -->
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="Edit Selected" onAction="#showEditDialog" 
+                        styleClass="secondary-button" prefWidth="130"/>
+                <Button text="Delete Selected" onAction="#deleteEquipment" 
+                        styleClass="delete-button" prefWidth="130"/>
+                <Button text="Place Order" onAction="#showOrderDialog" 
+                        styleClass="primary-button" prefWidth="130"/>
+                <Button text="Refresh" onAction="#loadEquipmentData" 
+                        styleClass="secondary-button" prefWidth="130"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

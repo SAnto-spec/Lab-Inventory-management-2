@@ -1,0 +1,15 @@
+com\labinventory\database\DatabaseManager.class
+com\labinventory\database\OrderDAO.class
+com\labinventory\LabInventoryApp.class
+com\labinventory\controller\HomeController.class
+com\labinventory\controller\HomeController$OrderListCell.class
+com\labinventory\model\Order.class
+com\labinventory\service\InventoryService.class
+com\labinventory\controller\EquipmentManagementController.class
+com\labinventory\controller\HomeController$EquipmentListCell.class
+com\labinventory\database\EquipmentDAO.class
+com\labinventory\model\Equipment.class
+com\labinventory\model\Order$OrderStatus.class
+com\labinventory\controller\EquipmentManagementController$1.class
+com\labinventory\controller\HomeController$ExpiryEquipmentListCell.class
+com\labinventory\controller\EquipmentManagementController$EquipmentListCell.class
