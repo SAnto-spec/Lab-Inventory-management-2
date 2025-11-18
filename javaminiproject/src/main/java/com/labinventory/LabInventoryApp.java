@@ -50,7 +50,7 @@ public class LabInventoryApp extends Application {
         System.out.println("Populating database with sample data...");
         
         try {
-            String sqlFile = "java2.sql";
+            String sqlFile = "java.sql";
             Connection conn = DatabaseManager.getConnection();
             Statement stmt = conn.createStatement();
             
